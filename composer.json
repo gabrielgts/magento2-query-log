@@ -1,0 +1,21 @@
+{
+    "name": "gtstudio/module-querylog",
+    "description": "Show the slowest SQL queries on the storefront.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel",
+            "email": "gabrielt.gts@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Gtstudio\\QueryLog\\": ""
+        }
+    }
+}
