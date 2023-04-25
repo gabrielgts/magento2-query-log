@@ -8,8 +8,8 @@
 
 
 ## Main Functionalities
-This module help you to debug and find database queries bottlenecks.
-You will be able to see the query its execution time, its stack trace through the frontend of the store in real time.
+This module helps you to debug and find database query bottlenecks.
+You will be able to see the query execution time, stack trace through the front end of the store in real time.
 
 
 ## Installation
