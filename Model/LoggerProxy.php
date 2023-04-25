@@ -24,17 +24,17 @@ class LoggerProxy extends MagentoLogProxy
     private PrintLoggerFactory $printLoggerFactory;
     private string $loggerAlias;
     private int $logAllQueries;
-    private string $logQueryTime;
+    private $logQueryTime;
     private int $logCallStack;
 
     public function __construct(
         FileFactory $fileFactory,
         QuietFactory $quietFactory,
         PrintLoggerFactory $printLoggerFactory,
-        $loggerAlias,
-        $logAllQueries = true,
+        $loggerAlias = 'disabled',
+        $logAllQueries = 0,
         $logQueryTime = 0.001,
-        $logCallStack = true
+        $logCallStack = 0
     ) {
         parent::__construct(
             $fileFactory,
