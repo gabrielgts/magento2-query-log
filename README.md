@@ -44,7 +44,7 @@ You will be able to see the query execution time, stack trace through the front 
 
 To enable you just need to run the following command :
 
-`bin/magento dev:query-view:enable`.
+`bin/magento dev:query-view:enable --include-all-queries=1 --query-time-threshold=0.001 --include-call-stack=1`.
 
 
 To disable you must run the following command :
