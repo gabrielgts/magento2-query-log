@@ -12,7 +12,7 @@
 This module helps you to debug and find database query bottlenecks.
 You will be able to see the query execution time, stack trace through the front end of the store in real time.
 
-![](gabrielgts/magento2-query-log/raw/main/docs/images/module.gif)
+![](docs/images/module.gif)
 
 ## Installation
 \* = in production please use the `--keep-generated` option
