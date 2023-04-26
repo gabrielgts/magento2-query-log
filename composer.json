@@ -1,6 +1,6 @@
 {
     "name": "gtstudio/module-querylog",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Show the slowest SQL queries on the storefront.",
     "type": "magento2-module",
     "license": "MIT",
