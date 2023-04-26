@@ -5,12 +5,14 @@
 - [Main Functionalities](#markdown-header-main-functionalities)
 - [Installation](#markdown-header-installation)
 - [Specifications](#markdown-header-specifications)
+- [Usage](#markdown-header-usage)
 
 
 ## Main Functionalities
 This module helps you to debug and find database query bottlenecks.
 You will be able to see the query execution time, stack trace through the front end of the store in real time.
 
+![](gabrielgts/magento2-query-log/raw/main/docs/images/module.gif)
 
 ## Installation
 \* = in production please use the `--keep-generated` option
@@ -37,3 +39,15 @@ You will be able to see the query execution time, stack trace through the front 
 
 - Console Command
    - dev:query-view:disable
+
+## Usage
+
+To enable you just need to run the following command :
+
+`bin/magento dev:query-view:enable`.
+
+
+To disable you must run the following command :
+
+`bin/magento dev:query-view:disable`.
+
