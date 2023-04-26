@@ -91,14 +91,16 @@ class PrintLogger implements LoggerInterface
         HTML;
 
         if ($this->logCallStack) {
-            $trace = substr(Debug::backtrace(true, false, false), 0, 2000) . '...';
+            $trace = Debug::backtrace(true, false, false);
+            $trace = substr($trace, strpos($trace, "\n") + 4);
+            $trace = substr($trace, 0, 1150) . '...';
             $message .= <<<HTML
-                <pre style="overflow:auto;">{$trace}</pre>
+                <pre style="overflow: auto">{$trace}</pre>
                 HTML;
         }
 
         $message .= <<<HTML
-            {$nl} </div> 
+            {$nl} </div>
         HTML;
 
         return $message;
